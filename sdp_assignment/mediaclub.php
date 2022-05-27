@@ -27,8 +27,8 @@
     </div>
     <h2 id="mediacdescrip"> Media Club Description </h2>
     <p>
-        Our club allow members to learn and understand more about photography, filming and handling PA equipment. Members are given the opportunity to develop their skills through training programs such as video editing, short film projects, photography courses, exhibitions, field trips and competitions. 
-        Feel free to join us if interested!
+        Our club allow members to learn and understand more about photography, filming and handling PA equipment. Members are given an opportunity to develop their skills through training programs such as video editing, short film projects, photography courses, exhibitions, field trips, and competitions. 
+        Come join us if you are interested!
     </p>  
 
     <h2 id="mediacevent"> Upcoming Event </h2>
