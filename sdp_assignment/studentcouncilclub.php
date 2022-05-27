@@ -27,8 +27,8 @@
     </div>
     <h2 id="scouncilcdescrip"> Student Council Club Description </h2>
     <p>
-        The purpose of the student council club is to give the members an opportunity to develop leadership by organizing and carrying out school activities and service projects.
-        Feel free to join us if interested!
+        The purpose of the student council club is to provide members an opportunity to develop their leadership skills by organizing and carrying out school activities and service projects.
+        Please join us if you are interested!
     </p>   
 
     <h2 id="scouncilcevent"> Upcoming Event </h2>
