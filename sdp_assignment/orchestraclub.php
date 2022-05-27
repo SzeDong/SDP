@@ -27,9 +27,9 @@
     </div>
     <h2 id="orchestracdescrip"> Orchestra Club Description </h2>
     <p>
-        Our club is a fun club for people to has passion for music. Anyone who plays a musical instrument or would like to learn is welcome to join. Besides that, we will be having performances twice a year.
-        Orchestra is a chance for the members to learn how to read, write and perform music. Members from all grade levels are welcome and do not need to have a background playing instruments. Anywhere from beginner to advanced is perfectly fine.
-        Feel free to join us if interested!
+        Our club is a fun club for people who have a burning passion for music. Anyone who plays a musical instrument or would like to learn is welcomed to join. Besides that, we will be having performances twice a year.
+        Orchestra club is a chance for members to learn how to read, write and perform music. Members from all grade levels are welcome and do not need to have a background playing instruments. Anywhere from beginner to advanced is perfectly fine.
+        Come join this musical family if you are interested!
     </p>   
 
     <h2 id="orchestracevent"> Upcoming Event </h2>
