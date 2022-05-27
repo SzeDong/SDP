@@ -47,7 +47,7 @@ include("connect.php");
     <h2 id="badmintoncdescrip"> Badminton Club Description </h2>
     <p>
         The Badminton Club was created for students to explore, practice and compete in the sport of badminton. Our club provides a fun, and competitive badminton environment.
-        Our mission of our club is to provide the opportunity to the members to develop and improve their badminton skils.  Feel free to join us if interested!
+        The mission of our club is to provide an opportunity for the members to develop and improve their badminton skills.  Feel free to join us if you are interested!
     </p> 
 
     <h2 id="badmintoncevent"> Upcoming Event </h2>
