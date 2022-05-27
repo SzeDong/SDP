@@ -27,8 +27,8 @@
     </div>
     <h2 id="dancingcdescrip"> Dancing Club Description </h2>
     <p>
-        Our club allows people to learn different types of dance styles such as Ballet, Hip Hop, Jazz, Modern Dance and lots more for you to explore! Do not worry if you does not have any dance experience, you just join us to learn to dance!
-        Feel free to join us if interested in dancing!
+        Our club allows people to learn different types of dance styles such as Ballet, Hip Hop, Jazz, Modern Dance and lots more for you to explore! Do not fret if you lack dance experience, just join us and learn to dance!
+        Do feel free to join us if you are interested in dancing!
     </p>   
 
     <h2 id="dancingcevent"> Upcoming Event </h2>
