@@ -16,5 +16,5 @@
         echo 'Member registered';
     }
     
-    /*header('refresh:5; url=ViewRegisteredMember.php');*/
+    header('refresh:5; url=ViewRegisteredMember.php');
 ?>   
