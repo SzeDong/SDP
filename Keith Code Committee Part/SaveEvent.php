@@ -16,6 +16,6 @@
         echo "Event saved failed: " . mysqli_error($conn);
     }
             
-    header('refresh:5; url=ManageEvent.php');
+    header('refresh:5; url=CreateEvent.php');
 
 ?>
