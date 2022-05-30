@@ -13,9 +13,9 @@
 	$sql= "UPDATE registrationclub set ClubName='$ClubName', ClubDescription='$ClubDescription', President='$President', VicePresident='$VicePresident', PhoneNumber='$PhoneNumber', Email='$Email'";
     
     if (mysqli_query($conn, $sql)) {
-        echo "Club updated successfully";
+        echo "Club Details Updated";
     } else {
-        echo "Club update failed: " . mysqli_error($conn);
+        echo "Club Details not Updated: " . mysqli_error($conn);
     }
     /*header('refresh:5; url=ManageClub.php');*/
     
