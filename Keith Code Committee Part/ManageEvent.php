@@ -42,7 +42,6 @@
 								<a href="EditEvent.php?ID=<?php echo $row['EventID']; ?>">Edit</a>
 								<a href="DeleteEvent.php?ID=<?php echo $row['EventID']; ?>">Delete</a>
 							</td>
-							<td><a href="<?php echo $row['RegistrationLink']; ?>" target = "_blank">Register Here</td>
 						</tr>
 						<?php
 					}
