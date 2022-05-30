@@ -15,7 +15,8 @@
 </head>
 <body>
 	<h1>Edit Event</h1>
-    <a href="ManageEvent.php">Return</a>
+   	<a href="ManageEvent.php">Return</a>
+	<a href="#">Home</a><br><br>
 
 	<form method="POST" action="UpdateEvent.php?ID=<?php echo $EventID; ?>">
         <label for="evtname">Event Name:</label><br>
