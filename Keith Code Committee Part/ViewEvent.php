@@ -9,8 +9,6 @@
         <h1>View Event</h1>
         <a href="#">Return</a>
         <a href="#">Home</a><br>
-		<a href="AddMember.php">Add Member</a>
-		<br><br>
 
         <div>
 		<table border="1">
