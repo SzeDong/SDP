@@ -8,7 +8,8 @@
     <body>
         <h1>View Registered Member</h1>
         <a href="ViewEvent.php">Return</a>
-        <a href="#">Home</a>
+        <a href="#">Home</a><br>
+	<a href="AddMember.php">Add Member</a>
         <br><br>
 
         <div>
