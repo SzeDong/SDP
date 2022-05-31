@@ -17,7 +17,7 @@
     } else {
         echo "Club Details not Updated: " . mysqli_error($conn);
     }
-    /*header('refresh:5; url=ManageClub.php');*/
+    header('refresh:5; url=ManageClub.php');
     
     mysqli_close($conn);
 ?>
