@@ -10,7 +10,7 @@
     $PhoneNumber=$_POST['PhoneNumber'];
     $Email=$_POST['Email'];
 
-	$sql= "UPDATE registrationclub set ClubName='$ClubName', ClubDescription='$ClubDescription', President='$President', VicePresident='$VicePresident', PhoneNumber='$PhoneNumber', Email='$Email'";
+	$sql= "UPDATE clubs set ClubName='$ClubName', ClubDescription='$ClubDescription', President='$President', VicePresident='$VicePresident', PhoneNumber='$PhoneNumber', Email='$Email'";
     
     if (mysqli_query($conn, $sql)) {
         echo "Club Details Updated";
