@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Join Meida Club</title>
+        <title>Join Media Club</title>
     </head>
     <body>
         <a href="joinclub.php">Return</a>
