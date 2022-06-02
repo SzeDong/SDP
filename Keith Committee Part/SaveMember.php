@@ -10,12 +10,12 @@
 
     if(!mysqli_query($conn, $sql))
     {
-        echo 'Member details not updated' . mysqli_error($conn);
+        echo 'Member not registered' . mysqli_error($conn);
     }
 
     else
     {
-        echo 'Member details updated';
+        echo 'Member registered';
     }
     
     /*header('refresh:5; url=homepagecommittee.php');*/
