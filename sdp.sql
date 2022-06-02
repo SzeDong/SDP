@@ -140,8 +140,7 @@ CREATE TABLE IF NOT EXISTS `newevent` (
   `Time` time NOT NULL,
   `Date` date NOT NULL,
   `Venue` varchar(255) NOT NULL,
-  `OrganisingClub` varchar(255) DEFAULT NULL,
-  `RegistrationLink` varchar(255) DEFAULT NULL,
+  `OrganisingClub` varchar(255) DEFAULT NULL
   PRIMARY KEY (`EventID`)
 ) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
@@ -149,9 +148,9 @@ CREATE TABLE IF NOT EXISTS `newevent` (
 -- Dumping data for table `newevent`
 --
 
-INSERT INTO `newevent` (`EventID`, `EventName`, `EventDescription`, `Time`, `Date`, `Venue`, `OrganisingClub`, `RegistrationLink`) VALUES
-(2, 'test', 'test', '12:34:56', '2022-05-02', 'test', 'test', 'https://www.google.com/forms'),
-(3, 'test', 'test', '12:34:56', '2022-05-02', 'test', 'test', 'https://www.google.com/forms');
+INSERT INTO `newevent` (`EventID`, `EventName`, `EventDescription`, `Time`, `Date`, `Venue`, `OrganisingClub`) VALUES
+(2, 'test', 'test', '12:34:56', '2022-05-02', 'test', 'test'),
+(3, 'test', 'test', '12:34:56', '2022-05-02', 'test', 'test');
 
 -- --------------------------------------------------------
 
