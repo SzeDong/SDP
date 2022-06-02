@@ -18,5 +18,5 @@
         echo 'Member registered';
     }
     
-    /*header('refresh:5; url=MemberHomePage.php');*/
+    /*header('refresh:5; url=homepagecommittee.php');*/
 ?>   
