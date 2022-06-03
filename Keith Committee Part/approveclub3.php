@@ -4,7 +4,7 @@
     $sql = "DELETE FROM clubs WHERE ClubID='" . $_GET["ID"] . "'";
 
     if (mysqli_query($conn, $sql)) {
-        echo "Club unapproved";
+        echo "Club unapproved and Club Record will be deleted";
     } else {
         echo "Club unapprove failed: " . mysqli_error($conn);
     }
