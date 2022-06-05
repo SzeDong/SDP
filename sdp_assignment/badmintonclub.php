@@ -1,20 +1,16 @@
 <?php
-include("connect.php");
+include("conn.php");
 ?>
+
 <!DOCTYPE html>
 <html>
     <style>
-    .eventtable table, td, th {  
+    table, td, th {  
     border: 1px solid #ddd;
     text-align: left;
     }
 
-    .eventtable {
-    border-collapse: collapse;
-    width: 100%;
-    }
-
-    .eventtable th, td {
+    th, td {
     padding: 15px;
     }
     </style>
@@ -47,7 +43,7 @@ include("connect.php");
     <h2 id="badmintoncdescrip"> Badminton Club Description </h2>
     <p>
         The Badminton Club was created for students to explore, practice and compete in the sport of badminton. Our club provides a fun, and competitive badminton environment.
-        The mission of our club is to provide an opportunity for the members to develop and improve their badminton skills.  Feel free to join us if you are interested!
+        Our mission of our club is to provide the opportunity to the members to develop and improve their badminton skils.  Feel free to join us if interested!
     </p> 
 
     <h2 id="badmintoncevent"> Upcoming Event </h2>
@@ -60,10 +56,10 @@ include("connect.php");
         <th>Venue</th>
     </tr>
     <?php
-    $sql = "SELECT * FROM badmintonclubevent WHERE OrganisingClub LIKE 'Badminton'";
-    $result = $con->query($sql) or die($con->error);
+    $sql = "SELECT * FROM event WHERE OrganisingClub LIKE 'Badminton Club' AND Status = 'Approved'";
+    $result = $con->query($sql);
     
-    while(($data = $result->fetch_assoc())!== null){
+    while($data = $result->fetch_assoc()){
         echo ("<tr>");
         echo ("<td>" . $data['EventName'] . "</td>");
         echo ("<td>" . $data['EventDescription'] . "</td>");

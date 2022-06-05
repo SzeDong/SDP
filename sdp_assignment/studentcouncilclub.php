@@ -1,5 +1,20 @@
+<?php
+include("conn.php");
+?>
+
 <!DOCTYPE html>
 <html>
+    <style>
+    table, td, th {  
+    border: 1px solid #ddd;
+    text-align: left;
+    }
+
+    th, td {
+    padding: 15px;
+    }
+    </style>
+
     <head>
         <title>Student Council Club</title>
     </head>
@@ -27,17 +42,33 @@
     </div>
     <h2 id="scouncilcdescrip"> Student Council Club Description </h2>
     <p>
-        The purpose of the student council club is to provide members an opportunity to develop their leadership skills by organizing and carrying out school activities and service projects.
-        Please join us if you are interested!
+        The purpose of the student council club is to give the members an opportunity to develop leadership by organizing and carrying out school activities and service projects.
+        Feel free to join us if interested!
     </p>   
 
     <h2 id="scouncilcevent"> Upcoming Event </h2>
-    <div class = clubevent1>
-    <h4>Student Assembly</h4>
-        <span>Description: We will be having student assembly every month to ensure that the member's issues are heard and addressed.
-        </span>
-    </div>
-    <br>   
+    <table>
+    <tr>
+        <th>Event Name</th>
+        <th>Event Description</th>
+        <th>Time</th>
+        <th>Date</th>
+        <th>Venue</th>
+    </tr>
+    <?php
+    $sql = "SELECT * FROM event WHERE OrganisingClub LIKE 'Student Council Club' AND Status = 'Approved'";
+    $result = $con->query($sql);
+    
+    while($data = $result->fetch_assoc()){
+        echo ("<tr>");
+        echo ("<td>" . $data['EventName'] . "</td>");
+        echo ("<td>" . $data['EventDescription'] . "</td>");
+        echo ("<td>" . $data['Time'] . "</td>");
+        echo ("<td>" . $data['Date'] . "</td>");
+        echo ("<td>" . $data['Venue'] . "</td>");
+        echo ("</tr>");}
+    ?>
+    </table>
 
     <h2 id="scouncilcphotos"> Student Council Club Photos </h2>
     <p>

@@ -1,5 +1,20 @@
+<?php
+include("conn.php");
+?>
+
 <!DOCTYPE html>
 <html>
+    <style>
+    table, td, th {  
+    border: 1px solid #ddd;
+    text-align: left;
+    }
+
+    th, td {
+    padding: 15px;
+    }
+    </style>
+
     <head>
         <title>Orchestra Club</title>
     </head>
@@ -27,31 +42,34 @@
     </div>
     <h2 id="orchestracdescrip"> Orchestra Club Description </h2>
     <p>
-        Our club is a fun club for people who have a burning passion for music. Anyone who plays a musical instrument or would like to learn is welcomed to join. Besides that, we will be having performances twice a year.
-        Orchestra club is a chance for members to learn how to read, write and perform music. Members from all grade levels are welcome and do not need to have a background playing instruments. Anywhere from beginner to advanced is perfectly fine.
-        Come join this musical family if you are interested!
+        Our club is a fun club for people to has passion for music. Anyone who plays a musical instrument or would like to learn is welcome to join. Besides that, we will be having performances twice a year.
+        Orchestra is a chance for the members to learn how to read, write and perform music. Members from all grade levels are welcome and do not need to have a background playing instruments. Anywhere from beginner to advanced is perfectly fine.
+        Feel free to join us if interested!
     </p>   
 
     <h2 id="orchestracevent"> Upcoming Event </h2>
-    <div class = clubevent1>
-    <h4>Orchestra Concert</h4>
-        <span>Time: 2.00pm-4.00pm
-            <br>Date: 15-6-2022
-            <br>Venue: Sunway Hotel, Subang, Selangor.
-            <br>Price: RM25 per person
-        </span>
-    </div>
-    <br>  
-
-    <div class = clubevent2>
-    <h4>Orchestra Concert</h4>
-        <span>Time: 3.00pm-5.00pm
-            <br>Date: 25-6-2022
-            <br>Venue: W Hotel, Kuala Lumpur.
-            <br>Price: RM30 per person
-        </span>
-    </div>
-    <br>
+    <table>
+    <tr>
+        <th>Event Name</th>
+        <th>Event Description</th>
+        <th>Time</th>
+        <th>Date</th>
+        <th>Venue</th>
+    </tr>
+    <?php
+    $sql = "SELECT * FROM event WHERE OrganisingClub LIKE 'Orchestra Club' AND Status = 'Approved'";
+    $result = $con->query($sql);
+    
+    while($data = $result->fetch_assoc()){
+        echo ("<tr>");
+        echo ("<td>" . $data['EventName'] . "</td>");
+        echo ("<td>" . $data['EventDescription'] . "</td>");
+        echo ("<td>" . $data['Time'] . "</td>");
+        echo ("<td>" . $data['Date'] . "</td>");
+        echo ("<td>" . $data['Venue'] . "</td>");
+        echo ("</tr>");}
+    ?>
+    </table>
 
     <h2 id="orchestracphotos"> Orchestra Club Photos </h2>
     <p>

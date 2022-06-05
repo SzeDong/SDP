@@ -1,5 +1,5 @@
 <?php
-include("connect.php");
+include("conn.php");
 ?>
 
 <!DOCTYPE html>
@@ -35,9 +35,9 @@ th, td {
         <th>Name</th>
     </tr>
     <?php
-    $sql = "SELECT * FROM studentcmember_list";
+    $sql = "SELECT * FROM studentcouncilmemberlist";
     $result = $con->query($sql);
-    
+  
     while($data = $result->fetch_assoc()){
         echo ("<tr>");
         echo ("<td>" . $data['MemberID'] . "</td>");

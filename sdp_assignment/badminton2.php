@@ -1,5 +1,5 @@
 <?php
-include("connect.php");
+include("conn.php");
 ?>
 
 <!DOCTYPE html>
@@ -35,7 +35,7 @@ th, td {
         <th>Name</th>
     </tr>
     <?php
-    $sql = "SELECT * FROM badmintonmember_list";
+    $sql = "SELECT * FROM badmintonmemberlist";
     $result = $con->query($sql);
     
     while($data = $result->fetch_assoc()){

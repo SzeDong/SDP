@@ -1,24 +1,20 @@
 <?php
-include("connect.php");
+include("conn.php");
 ?>
+
 <!DOCTYPE html>
 <html>
-<style>
-.eventtable table, td, th {  
-  border: 1px solid #ddd;
-  text-align: left;
-}
+    <style>
+    table, td, th {  
+    border: 1px solid #ddd;
+    text-align: left;
+    }
 
-.eventtable {
-  border-collapse: collapse;
-  width: 100%;
-}
+    th, td {
+    padding: 15px;
+    }
+    </style>
 
-.eventtable th, td {
-  padding: 15px;
-}
-
-</style>
     <head>
         <title>Basketball Club</title>
     </head>
@@ -48,8 +44,8 @@ include("connect.php");
 
     <h2 id="basketballcdescrip"> Basketball Club Description </h2>
     <p>
-        Our club provides a fun and competitive basketball environment. The mission of our club is to educate and empower the members who love basketball. Members will learn how to dribble, shoot, pass and new abilities to further  strengthen their skillset for basketball .
-        Kindly join us if you are interested!
+        Our club provides a fun, and competitive badminton environment. The mission of our club is to educate and empower the members who love Basketball. Members will learn how to dribble, shoot, pass and new abilities to further their knowledge of basketball .
+        Feel free to join us if interested!
     </p>
 
     <h2 id="basketballcevent"> Upcoming Event </h2>
@@ -62,10 +58,10 @@ include("connect.php");
         <th>Venue</th>
     </tr>
     <?php
-    $sql = "SELECT * FROM badmintonclubevent WHERE OrganisingClub LIKE 'Basketball Club'";
-    $result = $con->query($sql) or die($con->error);
+    $sql = "SELECT * FROM event WHERE OrganisingClub LIKE 'Basketball Club' AND Status = 'Approved'";
+    $result = $con->query($sql);
     
-    while(($data = $result->fetch_assoc())!== null){
+    while($data = $result->fetch_assoc()){
         echo ("<tr>");
         echo ("<td>" . $data['EventName'] . "</td>");
         echo ("<td>" . $data['EventDescription'] . "</td>");

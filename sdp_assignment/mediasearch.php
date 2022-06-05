@@ -1,6 +1,6 @@
 <?php
 define("db_host", "localhost");
-define("db_name", "sdp_assignment");
+define("db_name", "sdp");
 define("db_user", "root");
 define("db_password", "");
 
@@ -12,7 +12,7 @@ $pdo = new PDO("mysql:host=".db_host.";dbname=".db_name,db_user,db_password, [
 );
 
 //search for either ID or Name
-$stmt = $pdo -> prepare("SELECT * FROM mediamember_list WHERE MemberID LIKE ? OR MemberName LIKE ?");
+$stmt = $pdo -> prepare("SELECT * FROM mediamemberlist WHERE MemberID LIKE ? OR MemberName LIKE ?");
 $stmt -> execute([
     "%".$_POST['mediamember']."%", "%".$_POST['mediamember']."%"
 ]);

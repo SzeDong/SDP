@@ -1,5 +1,20 @@
+<?php
+include("conn.php");
+?>
+
 <!DOCTYPE html>
 <html>
+    <style>
+    table, td, th {  
+    border: 1px solid #ddd;
+    text-align: left;
+    }
+
+    th, td {
+    padding: 15px;
+    }
+    </style>
+
     <head>
         <title>Media Club</title>
     </head>
@@ -27,20 +42,33 @@
     </div>
     <h2 id="mediacdescrip"> Media Club Description </h2>
     <p>
-        Our club allow members to learn and understand more about photography, filming and handling PA equipment. Members are given an opportunity to develop their skills through training programs such as video editing, short film projects, photography courses, exhibitions, field trips, and competitions. 
-        Come join us if you are interested!
+        Our club allow members to learn and understand more about photography, filming and handling PA equipment. Members are given the opportunity to develop their skills through training programs such as video editing, short film projects, photography courses, exhibitions, field trips and competitions. 
+        Feel free to join us if interested!
     </p>  
 
     <h2 id="mediacevent"> Upcoming Event </h2>
-    <div class = clubevent1>
-    <h4>APU Diploma June Intake Orientation</h4>
-        <span>Description: Help to take photos and video.
-            <br>Time: 12.00pm - 2.00pm
-            <br>Date: 25-5-2022
-            <br>Venue: APU Auditorium 7, Kuala Lumpur.
-        </span>
-    </div>
-    <br>  
+    <table>
+    <tr>
+        <th>Event Name</th>
+        <th>Event Description</th>
+        <th>Time</th>
+        <th>Date</th>
+        <th>Venue</th>
+    </tr>
+    <?php
+    $sql = "SELECT * FROM event WHERE OrganisingClub LIKE 'Media Club' AND Status = 'Approved'";
+    $result = $con->query($sql);
+    
+    while($data = $result->fetch_assoc()){
+        echo ("<tr>");
+        echo ("<td>" . $data['EventName'] . "</td>");
+        echo ("<td>" . $data['EventDescription'] . "</td>");
+        echo ("<td>" . $data['Time'] . "</td>");
+        echo ("<td>" . $data['Date'] . "</td>");
+        echo ("<td>" . $data['Venue'] . "</td>");
+        echo ("</tr>");}
+    ?>
+    </table>
 
     <h2 id="mediacphotos"> Media Club Photos </h2>
     <p>
