@@ -44,7 +44,7 @@ include("conn.php");
 
     <h2 id="basketballcdescrip"> Basketball Club Description </h2>
     <p>
-        Our club provides a fun, and competitive badminton environment. The mission of our club is to educate and empower the members who love Basketball. Members will learn how to dribble, shoot, pass and new abilities to further their knowledge of basketball .
+        Our club provides a fun, and competitive basketball environment. The mission of our club is to educate and empower the members who love Basketball. Members will learn how to dribble, shoot, pass and new abilities to further their knowledge of basketball .
         Feel free to join us if interested!
     </p>
 
