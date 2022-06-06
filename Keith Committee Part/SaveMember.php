@@ -10,11 +10,11 @@
 
     if(mysqli_query($conn, $sql)) {
         echo '<script>alert("Successfully registered for event!");
-        window.location.href="homepagecommittee.php";
+        window.location.href="hpcommittee.php";
         </script>';
     } else {
         echo '<script>alert("Registration for event failed, please try again!");
-        window.location.href="homepagecommittee.php";
+        window.location.href="hpcommittee.php";
         </script>'. mysqli_error($conn);
     }
 ?>   
