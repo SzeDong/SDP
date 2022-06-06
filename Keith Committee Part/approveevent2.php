@@ -11,6 +11,6 @@
     } else {
         echo '<script>alert("Event approve failed, please try again!");
         window.location.href="approveevent.php";
-        </script>'. mysqli_error($conn)"";
+        </script>'. mysqli_error($conn);
     }
 ?>
