@@ -9,7 +9,6 @@
         <h1>View Club</h1>
         <a href="#">Return</a>
         <a href="#">Home</a><br>
-        <a href="ViewClubMember.php">View Club Member List</a>
 
         <div>
 		<table border="1">
